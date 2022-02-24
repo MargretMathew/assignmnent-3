@@ -37,10 +37,10 @@ void main()
             printf("PID\tArrival Time\tBurst Time\tTurnaround Time\n");
             for(i=0;i<num;i++)
             {
-                printf("%d\t%d\t%d\t%d\n",p[i].pid,p[i].AT,p[i].BT,p[i].TAT);
+                printf("%d\t%d\t\t%d\t\t%d\n",p[i].pid,p[i].AT,p[i].BT,p[i].TAT);
                 sum = sum + p[i].TAT;
             }
                 average = sum/(float)num;
                 printf("\nTotal Turnaround Time : %f", sum);
-                printf("\nAverage Turnaround Time : %.3f",average);
+                printf("\nAverage Turnaround Time : %.3f\n",average);
 }
